@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import Avatar from './Avatar';
 import HeaderOptions from './HeaderOptions';
+import Image from 'next/image';
 
 function Header({ gurl }) {
   const router = useRouter();
@@ -20,7 +21,7 @@ function Header({ gurl }) {
   return (
     <header className='sticky top-0 bg-white'>
       <div className='flex w-full p-6 items-center'>
-        <img
+        <Image
           loading='lazy'
           src={gurl}
           alt='Google logo'

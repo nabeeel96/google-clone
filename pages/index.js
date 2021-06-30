@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Avatar from '../components/Avatar';
 import { SearchIcon } from '@heroicons/react/outline';
 import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid';
-import Glogo from '../components/Glogo';
 import Footer from '../components/Footer';
 import { useRef } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
@@ -48,7 +48,13 @@ export default function Home() {
 
       {/* Body */}
       <form className='flex flex-col items-center mt-44 flex-grow w-4/5'>
-        <Glogo gurl='/google-logo.png' />
+        {/* <Glogo gurl='/google-logo.png' /> */}
+        <Image
+          src='/google-logo.png'
+          alt='Google-logo'
+          width={300}
+          height={100}
+        />
         <div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl'>
           <SearchIcon className='h-5 mr-3 text-gray-500' />
           <input
@@ -63,7 +69,7 @@ export default function Home() {
             Google Search
           </button>
           <button onClick={search} className='btn'>
-            I'm feeling lucky
+            I am feeling lucky
           </button>
         </div>
       </form>
