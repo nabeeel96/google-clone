@@ -1,7 +1,6 @@
 import { SearchIcon, XIcon, MicrophoneIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
-import Avatar from './Avatar';
 import HeaderOptions from './HeaderOptions';
 import Image from 'next/image';
 
@@ -46,7 +45,6 @@ function Header({ gurl }) {
             Search
           </button>
         </form>
-        <Avatar url='/pic1.jpg' className='ml-auto' />
 
         {/* HeaderOptions */}
       </div>

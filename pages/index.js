@@ -42,7 +42,15 @@ export default function Home() {
           <ViewGridIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer' />
 
           {/* Avatar */}
-          <Avatar url='/pic1.jpg' />
+          <Image
+            className={
+              'ml-auto h-10 rounded-full cursor-pointer transition duration-150 transform hover:scale-110'
+            }
+            src='/pic1.jpg'
+            width={45}
+            height={40}
+            alt='Profile pic'
+          />
         </div>
       </header>
 
