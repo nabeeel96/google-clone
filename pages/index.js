@@ -46,7 +46,7 @@ export default function Home() {
             className={
               'ml-auto h-10 rounded-full cursor-pointer transition duration-150 transform hover:scale-110'
             }
-            src='/pic1.jpg'
+            src='https://lh3.googleusercontent.com/ogw/ADea4I4JFme9fGTZLmI470oYkHgbIGdNgET5zPl_tJzJ5g=s83-c-mo'
             width={45}
             height={40}
             alt='Profile pic'
